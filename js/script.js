@@ -8,3 +8,22 @@ systemBtn.forEach(e => {
         e.classList.add("system__btn_active")
     })
 })
+
+const buttons = document.querySelectorAll('.system__btn');
+const blocks = document.querySelectorAll('.main_block');
+
+buttons.forEach(button => {
+    const targetBlock = button.getAttribute('data-target');
+
+    button.addEventListener('click', () => {
+        blocks.forEach(block => {
+            if (block.classList.contains(targetBlock)) {
+                block.classList.add("visible");
+                block.classList.remove("none");
+            } else {
+                block.classList.add("none");
+                block.classList.remove("visible");
+            }
+            });
+    });
+});

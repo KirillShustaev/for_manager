@@ -99,15 +99,15 @@
                 <ul class="system__list flex">
                     <li><button class="system__btn">Обучение</button></li>
                     <li><button class="system__btn">Оценка</button></li>
-                    <li><button class="system__btn">Подбор персонала</button></li>
-                    <li><button class="system__btn system__btn_active">Адаптация и стажировки</button></li>
+                    <li><button data-target="select" class="system__btn">Подбор персонала</button></li>
+                    <li><button data-target="adapt" class="system__btn system__btn_active">Адаптация и стажировки</button></li>
                     <li><button class="system__btn">Карьера</button></li>
                     <li><button class="system__btn">Мотивация</button></li>
                     <li><button class="system__btn">Сохранение экспертизы</button></li>
                 </ul>
             </div>
         </section>
-        <section class="adapt">
+        <section class="adapt main_block">
             <div class="container adapt__container">
                 <div class="adapt__material material">
                     <div class="flex">
@@ -116,24 +116,24 @@
                     </div>
                     <ul class="material__list flex">
                         <li>
-                           <a class="material__item" href="#">
-                             <h4>Планы адаптации</h4>
-                           </a>
+                            <a class="material__item" href="#">
+                                <h4>Планы адаптации</h4>
+                            </a>
                         </li>
                         <li>
-                           <a class="material__item" href="#">
-                             <h4>Отчет по адаптации и стажировкам</h4>
-                           </a>
+                            <a class="material__item" href="#">
+                                <h4>Отчет по адаптации и стажировкам</h4>
+                            </a>
                         </li>
                         <li>
-                           <a class="material__item" href="#">
-                             <h4>Памятка по адаптации новых сотрудников</h4>
-                           </a>
+                            <a class="material__item" href="#">
+                                <h4>Памятка по адаптации новых сотрудников</h4>
+                            </a>
                         </li>
                         <li>
-                           <a class="material__item" href="#">
-                             <h4>Книга будущего сотрудника (пребординг для финальных кандидатов)</h4>
-                           </a>
+                            <a class="material__item" href="#">
+                                <h4>Книга будущего сотрудника (пребординг для финальных кандидатов)</h4>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -244,7 +244,7 @@
                     <div class="contact__card flex">
                         <div class="contact__imgBlock">
                             <picture>
-                                <img src="img/contact_Img.png" alt="Фото сотрудника">
+                                <img loading="lazy" src="img/contact_Img.png" alt="Фото сотрудника">
                             </picture>
                         </div>
                         <div class="contact__descrBlock">
@@ -264,7 +264,243 @@
                 </div>
             </div>
         </section>
+        <section class="select main_block">
+            <div class="container select__container">
+                <div class="select__material material">
+                    <div class="flex">
+                        <h3>Рекомендуемые материалы</h3>
+                        <hr>
+                    </div>
+                    <ul class="material__list flex">
+                        <li>
+                            <a class="material__item" href="#">
+                                <h4>Регламент подбора</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="material__item" href="#">
+                                <h4>Секреты подбора персонала</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="material__item" href="#">
+                                <h4>Групповое собеседование (массовый подбор персонала)</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="material__item" href="#">
+                                <h4>«Искусство подбора персонала» (книга)</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="select__memo memo">
+                    <div class="flex">
+                        <h3>памятка руководителю</h3>
+                        <hr>
+                    </div>
+                    <ul class="memo__list flex">
+                        <li class="memo__itemMain">
+                            <div class="memo__itemTop flex">
+                                <div class="memo__topNum flex">1</div>
+                                <p>Процесс подбора </p>
+                            </div>
+                            <div class="memo__descrBlock flex">
+                                <ul class="memo__advantList flex">
+                                    <li>
+                                        Оценивает укомплектованность подразделения<br> и потребность в подборе персонала
+                                    </li>
+                                    <li>
+                                        Инициирует заявки на подбор персонала в АСУ HR<br>
+                                        <a href="#">Создание заявки на подбор персонала в АСУ HR</a>
+                                    </li>
+                                    <li>
+                                        Своевременно вносит статусы по кандидатам<br>
+                                        <a href="#">Работа в модуле Подбор персонала</a>
+                                    </li>
+                                    <li>
+                                        Соблюдает сроки и осуществляет мероприятия<br> в соответствии с регламентом по подбору персонала<br>
+                                        <a href="#">Регламент подбора персонала</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="memo__itemMain">
+                            <div class="memo__itemTop flex">
+                                <div class="memo__topNum flex">2</div>
+                                <p>Проведение интервью</p>
+                            </div>
+                            <div class="memo__descrBlock flex">
+                                <ul class="memo__advantList flex">
+                                    <li>
+                                        При проведении интервью использует<br> рекомендованные материалы
+                                    </li>
+                                    <li>
+                                        Принимает решение на основании соответствия<br> кандидата необходимым компетенциям и ценностям<br>
+                                        <a href="#">Корпоративные ценности</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="memo__itemMain">
+                            <div class="memo__itemTop flex">
+                                <div class="memo__topNum flex">3</div>
+                                <p>Своевременно обеспечивать организацию рабочего места для нового сотрудника* </p>
+                            </div>
+                            <div class="memo__descrBlock flex">
+                                <ul class="memo__advantList flex">
+                                    <li>
+                                        Рассматривает на открытые вакансии как внешних,<br> так и внутренних кандидатов
+                                    </li>
+                                    <li>
+                                        Создает условия для перехода сотрудников<br> внутри Комплекса<br>
+                                        <a href="#">Инструкция Банк вакансий</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="select__instr instr">
+                    <div class="flex">
+                        <h3>СЕРВИСЫ</h3>
+                        <hr>
+                    </div>
+                    <div class="instr__list">
+                        <h5>Информация в АСУ HR:</h5>
+                        <div class="instr__descrList flex">
+                            <div class="instr__item flex">
+                                <div class="instr__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                    <path d="M15 0C6.7125 0 0 6.7125 0 15C0 23.2875 6.7125 30 15 30C23.2875 30 30 23.2875 30 15C30 6.7125 23.2875 0 15 0ZM22.5 6.675L25.2 9.375L13.125 21.45L6.675 15L9.375 12.3L13.125 16.05L22.5 6.675Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <p class="instr__itemDescr">
+                                    Заявки на подбор
+                                </p>
+                            </div>
+                            <div class="instr__item flex">
+                                <div class="instr__icon">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30 0L0 15L11.25 18.75L15 30L30 0Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <p class="instr__itemDescr">
+                                    Вакансии КЭП
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select__contact contact">
+                    <div class="flex">
+                        <h3>Контакты</h3>
+                        <hr>
+                    </div>
+                    <div class="contact__card flex">
+                        <div class="contact__imgBlock">
+                            <picture>
+                                <img loading="lazy" src="img/contact_Img.png" alt="Фото сотрудника">
+                            </picture>
+                        </div>
+                        <div class="contact__descrBlock">
+                            <div class="contact__nameBlock">
+                                <div class="contact__nameDescr">Анна Валиева</div>
+                                <div class="contact__post">Начальник Центра подбора и адаптации</div>
+                            </div>
+                            <div class="contact__contactBlock">
+                                <div class="contact__telBlock flex">
+                                    <div class="contact__tel">+7 (495) 120-44-40</div>
+                                    <div class="contact__telExtension">доб. 205</div>
+                                </div>
+                                <a class="contact__mail" href="mailto:ValievaAI@property.mos.ru">ValievaAI@property.mos.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="connect">
+            <div class="container connect__container">
+                <h5>Если у вас возникли вопросы, свяжитесь с нами по электронной почте</h5>
+                <ul class="connect__list flex">
+                    <li class="connect__item">
+                        <div class="connect__imgBlock">
+                            <picture>
+                                <img loading="lazy" src="img/connect_1.jpg" alt="Фотография сотрудника">
+                            </picture>
+                        </div>
+                        <div class="connect__descrBlock">
+                            <div class="connect__name">Нартова Арина</div>
+                            <div class="connect__descr">Куратор направления корпоративной культуры КЭП</div>
+                            <a href="mailto:NartovaAA@develop.mos.ru">NartovaAA@develop.mos.ru</a>
+                        </div>
+                    </li>
+                    <li class="connect__item">
+                        <div class="connect__imgBlock">
+                            <picture>
+                                <img loading="lazy" src="img/connect_2.jpg" alt="Фотография сотрудника">
+                            </picture>
+                        </div>
+                        <div class="connect__descrBlock">
+                            <div class="connect__name">Бучельникова Алена</div>
+                            <div class="connect__descr">HR партнер ДЭПиР</div>
+                            <a href="mailto:BuchelnikovaAA@property.mos.ru">BuchelnikovaAA@property.mos.ru</a>
+                        </div>
+                    </li>
+                    <li class="connect__item">
+                        <div class="connect__imgBlock">
+                            <picture>
+                                <img loading="lazy" src="img/connect_3.jpg" alt="Фотография сотрудника">
+                            </picture>
+                        </div>
+                        <div class="connect__descrBlock">
+                            <div class="connect__name">Авнилова Юлия</div>
+                            <div class="connect__descr">HR партнер ДКП</div>
+                            <a href="mailto:AvnilovaYuO@property.mos.ru">AvnilovaYuO@property.mos.ru</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container footer__container flex">
+            <div class="footer__logoBlock flex">
+                <a href="#" class="footer__logo">
+                    <picture>
+                        <img loading="lazy" src="img/footer_logo.svg" alt="Логотип">
+                    </picture>
+                </a>
+                <div class="footer__supBlock">
+                    <div class="footer__supDescr">Техподдержка корпоративного портала:</div>
+                    <a href="mailto:support-econom@mos.ru">support-econom@mos.ru</a>
+                </div>
+            </div>
+            <ul class="footer__tgBlock flex">
+                <li>
+                    <div class="footer__tgImgBlock">
+                        <picture>
+                            <img loading="lazy" src="img/economy_moscow.png" alt="QR-код">
+                        </picture>
+                    </div>
+                    <div class="footer__tgDescr">
+                        Telegram канал <span>“Экономика Москвы”</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer__tgImgBlock">
+                        <picture>
+                            <img loading="lazy" src="img/economist.png" alt="QR-код">
+                        </picture>
+                    </div>
+                    <div class="footer__tgDescr">
+                        Telegram канал <span>“Московский экономист”</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
